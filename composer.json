@@ -1,6 +1,6 @@
 {
-    "name": "zendframework/zendframework1",
-    "description": "Zend Framework 1",
+    "name": "plesk/zf1",
+    "description": "Zend Framework 1 (Plesk)",
     "type": "library",
     "keywords": [
         "framework",
@@ -19,9 +19,6 @@
     "include-path": [
         "library/"
     ],
-    "config": {
-        "bin-dir": "bin"
-    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.12.x-dev"
