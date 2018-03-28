@@ -390,10 +390,7 @@ class Zend_Controller_Request_Http extends Zend_Controller_Request_Abstract
     public function setRequestUri($requestUri = null)
     {
         if ($requestUri === null) {
-            if (isset($_SERVER['HTTP_X_ORIGINAL_URL'])) { 
-                // IIS with Microsoft Rewrite Module
-                $requestUri = $_SERVER['HTTP_X_ORIGINAL_URL'];
-            } elseif (isset($_SERVER['HTTP_X_REWRITE_URL'])) { 
+            if (isset($_SERVER['HTTP_X_REWRITE_URL'])) {
                 // IIS with ISAPI_Rewrite
                 $requestUri = $_SERVER['HTTP_X_REWRITE_URL'];
             } elseif (
