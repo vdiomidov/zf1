@@ -30,9 +30,8 @@
     },
     "archive": {
         "exclude": [
-            "/demos",
-            "/documentation",
-            "/tests"
+            "/tests",
+            "/phpunit*"
         ]
     },
     "scripts": {
